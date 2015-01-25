@@ -12,9 +12,14 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <queue>
 
 using namespace std;
 
+//isPalindrome Function
+bool isPalindrome (string astring);
 
+//Initialize Queue Function
+void initializeQueue(string stringAr[]);
 
 #endif /* HEADER_H_ */
