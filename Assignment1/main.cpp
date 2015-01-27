@@ -19,7 +19,7 @@ int main()
 	cout << "   Assignment#1 : Linked Lists\n";
 	cout << "*****************************************\n";
 
-	string stringAr[10];
+	//Declares all strings.
 	string string1 = "dad";
 	string string2 = "radar";
 	string string3 = "Otto";
@@ -31,21 +31,17 @@ int main()
 	string string9 = "Sit on a potato pan, Otis";
 	string string10 = "Saddleback is a great place to learn";
 
-	stringAr[0] = string1;
-	stringAr[1] = string2;
-	stringAr[2] = string3;
-	stringAr[3] = string4;
-	stringAr[4] = string5;
-	stringAr[5] = string6;
-	stringAr[6] = string7;
-	stringAr[7] = string8;
-	stringAr[8] = string9;
-	stringAr[9] = string10;
-
-	for (int i = 0; i < 10; i++)
-	{
-		initializeQueue(stringAr[i]);
-	}
+	//Calls the initialize queue function for all strings
+	initializeQueue(string1);
+	initializeQueue(string2);
+	initializeQueue(string3);
+	initializeQueue(string4);
+	initializeQueue(string5);
+	initializeQueue(string6);
+	initializeQueue(string7);
+	initializeQueue(string8);
+	initializeQueue(string9);
+	initializeQueue(string10);
 
 //	isPalindrome (astring);
 

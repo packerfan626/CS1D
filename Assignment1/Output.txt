@@ -1,0 +1,25 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : TTH- 5p-9:20
+   Assignment#1 : Linked Lists
+*****************************************
+dad is a palindrome!
+
+radar is a palindrome!
+
+Otto is a palindrome!
+
+mom is a palindrome!
+
+tigers is NOT a palindrome!
+
+A man, a plan, a canal, Panama is a palindrome!
+
+Isn’t this class cool? is NOT a palindrome!
+
+Was it a car or a cat I saw? is a palindrome!
+
+Sit on a potato pan, Otis is a palindrome!
+
+Saddleback is a great place to learn is NOT a palindrome!

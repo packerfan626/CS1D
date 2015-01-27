@@ -13,13 +13,17 @@
 #include <iomanip>
 #include <string>
 #include <queue>
+#include <stdio.h>
 
 using namespace std;
 
 //isPalindrome Function
-bool isPalindrome (string astring);
+bool isPalindrome (queue<char> q, bool &palindrome);
 
 //Initialize Queue Function
-void initializeQueue(string stringAr[]);
+void initializeQueue(string stringVar);
+
+//ReverseQueue Function
+void reverseQueue(queue<char> forward, queue<char> &backward);
 
 #endif /* HEADER_H_ */
