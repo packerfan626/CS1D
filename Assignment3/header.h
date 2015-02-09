@@ -22,6 +22,9 @@ void StackSTL();
 //Function that will implement a stack using a singly linked list
 void SinglyLinkedList();
 
+//Function that will implement a deque using a linked list
+void DequeLinkedList();
+
 using namespace std;
 
 

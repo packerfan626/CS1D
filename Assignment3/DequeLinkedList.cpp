@@ -5,8 +5,8 @@
  *  SECTION      : TTH: 5:30-9:20pm
  *  Due Date     : 2/10/2015
  *********************************************************/
-
-void SinglyLinkedList()
+#include "header.h"
+void DequeLinkedList()
 {
-
+	LinkedDeque<string> x;
 }

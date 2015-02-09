@@ -14,6 +14,7 @@ void PrintMenu(int &selection)
 	cout << "1--Implement stacks using STL Vector\n";
 	cout << "2--Implement a stack using a singly linked list\n";
 	cout << "3--Implement a deque using a linked list\n";
+	cout << "4--Implement the Parentheses Algorithm\n";
 	cout << "0--Exit\n";
 
 	cout << "\nSelection: ";

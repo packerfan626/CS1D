@@ -5,7 +5,7 @@
  *  SECTION      : TTH: 5:30-9:20pm
  *  Due Date     : 2/10/2015
  *********************************************************/
-#include "LinkedList.h"
+#include "header.h"
 
 int main()
 {
@@ -28,7 +28,9 @@ int main()
 			break;
 		case 2: SinglyLinkedList();
 			break;
-		case 3:
+		case 3: DequeLinkedList();
+			break;
+		case 4:
 			break;
 		case 0:
 			break;
@@ -36,4 +38,5 @@ int main()
 			break;
 	}
 
+	return 0;
 }
