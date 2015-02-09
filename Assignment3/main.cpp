@@ -5,7 +5,7 @@
  *  SECTION      : TTH: 5:30-9:20pm
  *  Due Date     : 2/10/2015
  *********************************************************/
-#include "header.h"
+#include "LinkedList.h"
 
 int main()
 {
@@ -26,7 +26,7 @@ int main()
 	{
 		case 1: StackSTL();
 			break;
-		case 2:	SinglyLinkedList();
+		case 2: SinglyLinkedList();
 			break;
 		case 3:
 			break;
