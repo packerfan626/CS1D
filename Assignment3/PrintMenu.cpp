@@ -9,7 +9,7 @@
 
 void PrintMenu(int &selection)
 {
-	cout << "WELCOME TO THE stack PROGRAM\n\n";
+
 	cout << "Make a selection:\n";
 	cout << "1--Implement stacks using STL Vector\n";
 	cout << "2--Implement a stack using a singly linked list\n";

@@ -20,23 +20,28 @@ int main()
 	int selection;
 	selection = 0;
 
-	PrintMenu(selection);
+	cout << "WELCOME TO THE stack PROGRAM\n\n";
 
-	switch(selection)
+	do
 	{
-		case 1: StackSTL();
-			break;
-		case 2: SinglyLinkedList();
-			break;
-		case 3: DequeLinkedList();
-			break;
-		case 4:
-			break;
-		case 0:
-			break;
-		default: cout << "Please Enter in a number between 0 and 3";
-			break;
-	}
+		PrintMenu(selection);
+
+		switch(selection)
+		{
+			case 1: StackSTL();
+				break;
+			case 2: SinglyLinkedList();
+				break;
+			case 3: //DequeLinkedList();
+				break;
+			case 4: Parentheses();
+				break;
+			case 0:
+				break;
+			default: cout << "Please Enter in a number between 0 and 4";
+				break;
+		}
+	}while (selection != 0);
 
 	return 0;
 }

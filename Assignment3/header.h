@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <stack>
+using namespace std;
 
 //Print Menu function, display main menu to the user
 void PrintMenu(int &selection);
@@ -25,7 +25,9 @@ void SinglyLinkedList();
 //Function that will implement a deque using a linked list
 void DequeLinkedList();
 
-using namespace std;
+void Parentheses();
+//Parenthesis Algorithm Implementation
+bool ParenthesesAlgorithm(string equation);
 
 
 #endif /* HEADER_H_ */

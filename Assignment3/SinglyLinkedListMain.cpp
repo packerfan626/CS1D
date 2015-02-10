@@ -5,59 +5,53 @@
  *  SECTION      : TTH: 5:30-9:20pm
  *  Due Date     : 2/10/2015
  *********************************************************/
-#include "header.h"
-
+#include "LinkedList.h"
 void SinglyLinkedList()
 {
-	stack<string> x;
-	stack <int> y;
-	stack <double> z;
+	LinkedList<string> x;
+	LinkedList <int> y;
+	LinkedList <double> z;
 
-	x.push("Paula");
-	x.push("JoAnn");
-	x.push("Jack");
-	x.push("Mark");
-	x.push("Paul");
-	x.push("Eric");
 
-	y.push(2788.123);
-	y.push(243.76);
-	y.push(8445.5612);
-	y.push(19833.121);
-	y.push(12.4);
+	x.insertLast("Paula");
+	x.insertLast("JoAnn");
+	x.insertLast("Jack");
+	x.insertLast("Mark");
+	x.insertLast("Paul");
+	x.insertLast("Eric");
 
-	z.push(98);
-	z.push(88);
-	z.push(88);
-	z.push(123);
-	z.push(8445);
-	z.push(9833);
-	z.push(12);
-	z.push(354);
+	y.insertLast(2788.123);
+	y.insertLast(243.76);
+	y.insertLast(8445.5612);
+	y.insertLast(19833.121);
+	y.insertLast(12.4);
+
+	z.insertLast(98);
+	z.insertLast(88);
+	z.insertLast(88);
+	z.insertLast(123);
+	z.insertLast(8445);
+	z.insertLast(9833);
+	z.insertLast(12);
+	z.insertLast(354);
 
 	cout << "B: Implement a Stack Without using STL: \n\n";
 	cout << "Strings: \n";
-	cout << "Last Element: " << x.top() << endl;
-	cout << "Size of Stack: " << x.size() << endl << endl;
-	cout << "POPPING last element...\n";
-	x.pop();
-	cout << "Last Element: " << x.top() << endl;
-	cout << "Size of Stack: " << x.size() << endl << endl;
+	cout << "Size of Stack: " << x.length() << endl << endl;
+	cout << "POPPING Mark\n";
+	x.deleteNode("Mark");
+	cout << "Size of Stack: " << x.length() << endl << endl;
 
 	cout << "Doubles: \n";
-	cout << "Last Element: " << y.top() << endl;
-	cout << "Size of Stack: " << y.size() << endl << endl;
-	cout << "POPPING last element...\n";
-	y.pop();
-	cout << "Last Element: " << y.top() << endl;
-	cout << "Size of Stack: " << y.size() << endl << endl;
+	cout << "Size of Stack: " << y.length() << endl << endl;
+	cout << "POPPING 243.76...\n";
+	y.deleteNode(243.76);
+	cout << "Size of Stack: " << y.length() << endl << endl;
 
 	cout << "Integers: \n";
-	cout << "Last Element: " << z.top() << endl;
-	cout << "Size of Stack: " << z.size() << endl << endl;
-	cout << "POPPING last element...\n";
-	z.pop();
-	cout << "Last Element: " << z.top() << endl;
-	cout << "Size of Stack: " << z.size() << endl << endl;
+	cout << "Size of Stack: " << z.length() << endl << endl;
+	cout << "POPPING 12...\n";
+	z.deleteNode(12);
+	cout << "Size of Stack: " << z.length() << endl << endl;
 
 }
