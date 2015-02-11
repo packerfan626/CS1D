@@ -1,0 +1,144 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : TTH- 5p-9:20
+   Assignment#3 : Stacks
+*****************************************
+WELCOME TO THE stack PROGRAM
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 1
+
+
+A: STL vector: 
+
+String Stack: 
+Size of String stack 6
+Last Item in String Stack Eric
+
+Double Stack: 
+Size of Double stack 5
+Last item in Double Stack 12.4
+
+Integer Stack: 
+Size of Integer Stack: 8
+Last item in Integer Stack: 354
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 2
+
+
+B: Implement a Stack Without using STL: 
+
+Strings: 
+Size of Stack: 6
+
+POPPING Mark
+Size of Stack: 5
+
+Doubles: 
+Size of Stack: 5
+
+POPPING 243.76...
+Size of Stack: 4
+
+Integers: 
+Size of Stack: 8
+
+POPPING 12...
+Size of Stack: 7
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 3
+
+
+STRINGS:
+First: Paula
+Last: Eric
+Size: 6
+REMOVING..Eric
+Last: Paul
+
+DOUBLES:
+First: 2788
+Last: 12
+Size: 5
+REMOVING..12.4
+Last: 19833
+
+INTS:
+First: 98
+Last: 354
+Size: 8
+REMOVING..354
+Last: 12
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 4
+
+
+Enter in an equation: (7+3)
+
+VALID!
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 4
+
+
+Enter in an equation: (200
+
+NOT valid
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 4
+
+
+Enter in an equation: [3+7](8+6)
+
+VALID!
+
+Make a selection:
+1--Implement stacks using STL Vector
+2--Implement a stack using a singly linked list
+3--Implement a deque using a linked list
+4--Implement the Parentheses Algorithm
+0--Exit
+
+Selection: 0
+

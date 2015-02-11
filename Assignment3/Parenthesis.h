@@ -25,14 +25,14 @@ class paren
 public:
 	paren();
 	void push(Data newItem);
-	Data pop(Data item);
+	void pop();
 	bool isEmpty();
 	int size();
+	Data top();
 
 protected:
 	list<Data> *first;
 	list<Data> *last;
-	Data *Element;
 	int n;
 };
 
@@ -68,19 +68,22 @@ void paren<Data>::push(Data newItem)
 }
 
 template<class Data>
-Data paren<Data>::pop(Data item)
+void paren<Data>::pop()
 {
+	list<Data> *temp;
 
-	if (isEmpty() == true)
+	if(isEmpty())
 	{
-		cout << "Can't pop from an empty stack";
+		cout << "Empty";
 	}
 	else
 	{
-		delete first;
+		temp = first;
+
+		first = first->link;
+		delete temp;
 	}
-	n--;
-	return item;
+
 }
 
 template <class Data>
@@ -103,6 +106,16 @@ template <class Data>
 int paren<Data>::size()
 {
 	return n;
+}
+
+template <class Data>
+Data paren<Data>::top()
+{
+	list<Data> *temp;
+
+	temp = first;
+
+	return temp->info;
 }
 
 

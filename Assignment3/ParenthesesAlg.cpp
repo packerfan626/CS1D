@@ -25,11 +25,11 @@ void Parentheses()
 
 	if (match == true)
 	{
-		cout << "Solve";
+		cout << "VALID!\n\n";
 	}
 	else
 	{
-		cout << "Cant solve";
+		cout << "NOT valid\n\n";
 	}
 }
 
@@ -54,36 +54,49 @@ bool ParenthesesAlgorithm(string equation)
 	strcpy(charVar, equation.c_str());
 
 	//Parenthesis Algorithm
-	for (i = 0; i == max; i++)
+	for (i = 0; i < max; i++)
 	{
 		if (charVar[i] == '(' || charVar[i] == '{' || charVar[i] == '[')
 		{
 			initial.push(charVar[i]);
 		}
-		else if (charVar[i] == ')' || charVar[i] == '}' || charVar[i] == '[')
+		else if (charVar[i] == ')')
 		{
-			initial.push(charVar[i]);
-
-			if (initial.isEmpty()==true)
+			if(initial.top() == '(' )
 			{
-				cout << "Nothing to match";
+				initial.pop();
+				return true;
+			}
+			else
+			{
 				return false;
 			}
-
-			if(charVar[i] != initial.pop(charVar[i]))
+		}
+		else if (charVar[i] == '}')
+		{
+			if(initial.top() == '{' )
 			{
-				cout << "Wrong Type";
+				initial.pop();
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else if (charVar[i] == ']')
+		{
+			if(initial.top() == '[' )
+			{
+				initial.pop();
+				return true;
+			}
+			else
+			{
 				return false;
 			}
 		}
 	}
-
-	if(initial.isEmpty())
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
+	return false;
 }
+

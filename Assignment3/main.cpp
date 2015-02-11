@@ -32,7 +32,7 @@ int main()
 				break;
 			case 2: SinglyLinkedList();
 				break;
-			case 3: //DequeLinkedList();
+			case 3: DequeLinkedList();
 				break;
 			case 4: Parentheses();
 				break;
