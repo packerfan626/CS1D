@@ -5,55 +5,194 @@
  *  SECTION      : TTH: 5:30-9:20pm
  *  Due Date     : 2/17/2015
  *********************************************************/
+#include "header.h"
 
 #ifndef QUEUE_H_
 #define QUEUE_H_
-template<class Data>
+
+typedef string Elem;
 struct Node
 {
-	Data info;
+	Elem info;
 	Node *next;
 	Node *prev;
 };
 
 
-template<class Data>
 class DLinkedList
 {
 public:
 	DLinkedList();
-	~DLinkedList();
-	bool empty() const;
-	const Data viewFront() const;
-	const Data viewBack() const;
-	void addFront(const Data& add);
-	void addBack(const Data& sub);
-	void removeFront();
-	void removeBack();
+	bool isEmpty();
+	int length();
+	const Elem viewFront();
+	const Elem viewBack();
+	void addBack(const Elem& sub);
+	void eraseFront();
 
-protected:
-	Node <Data> *front;
-	Node <Data> *back;
+private:
+	Node *front;
+	Node *back;
 	int n;
 };
 
 
-template<class Data>
 class LinkedDeque
 {
 public:
 	LinkedDeque();
-	int size() const;
-	bool empty() const;
-	const Data front();
-	const Data back();
-
-private:
+	int size();
+	bool empty();
+	void front();
+	void insertBack(const Elem e);
 	void removeFront();
-	void removeBack();
-	DLinkedList<Data> D;
+
+protected:
+	DLinkedList D;
+
 };
 
+/* LINKED DEQUE FUNCTIONS:
+ * All functions for the LinkedDeque class.
+ */
+LinkedDeque::LinkedDeque()
+{
 
+}
+
+int LinkedDeque::size()
+{
+
+	return D.length();
+}
+
+bool LinkedDeque::empty()
+{
+	if(D.isEmpty())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void LinkedDeque::front()
+{
+	Elem front;
+	front = D.viewFront();
+
+	cout << front;
+}
+
+void LinkedDeque::insertBack(const Elem e)
+{
+	D.addBack(e);
+}
+
+void LinkedDeque::removeFront()
+{
+	D.eraseFront();
+}
+
+/*
+ * DLINKEDLIST FUNCTIONS
+ */
+
+DLinkedList::DLinkedList()
+{
+	front = NULL;
+	back = NULL;
+	n = 0;
+}
+
+bool DLinkedList::isEmpty()
+{
+	if (n==0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+int DLinkedList::length()
+{
+	return n;
+}
+
+const Elem DLinkedList::viewFront()
+{
+	Node *temp;
+	Elem element;
+
+	if (isEmpty())
+	{
+		cout << "The Queue is empty!\n\n";
+
+		return 0;
+	}
+	else
+	{
+		temp = front;
+
+		element = temp->info;
+
+		return element;
+	}
+}
+
+void DLinkedList::eraseFront()
+{
+	Node *temp;
+	temp = new Node;
+
+	if(isEmpty())
+	{
+		cout << "Cannot remove from an empty list";
+	}
+	else
+	{
+		if(front->next != NULL)
+		{
+			temp = front;
+			front = front->next;
+
+			delete temp;
+		}
+		else
+		{
+			front = NULL;
+		}
+
+	}
+}
+
+void DLinkedList::addBack(const Elem& newItem)
+{
+	Node *temp;
+	temp = new Node;
+	temp->info = newItem;
+
+	if (isEmpty())
+	{
+		front = temp;
+		back = temp;
+		front->prev = NULL;
+		back->next = NULL;
+	}
+	else
+	{
+		back->next = temp;
+		temp->prev = back;
+		back = temp;
+
+		back->next = NULL;
+	}
+	n++;
+}
 
 #endif /* QUEUE_H_ */

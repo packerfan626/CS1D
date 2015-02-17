@@ -14,6 +14,7 @@
 
 using namespace std;
 
-
+//Contains code for Part 1
+void Part1();
 
 #endif /* HEADER_H_ */

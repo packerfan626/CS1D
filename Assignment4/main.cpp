@@ -7,7 +7,6 @@
  *********************************************************/
 
 #include "header.h"
-
 int main()
 {
 	//PRINT HEADING
@@ -18,11 +17,7 @@ int main()
 	cout << "   Assignment#4 : Queue & Dequeue \n";
 	cout << "*****************************************\n";
 
-	string string1 = "A man, a plan, a canal, Panama";
-	string string2 = "Was it a car or a cat I saw?";
-	string string3 = "Sit on a potato pan, Otis";
-	string string4 = "Isn’t this class cool?";
-
+	Part1();
 
 	return 0;
 }
