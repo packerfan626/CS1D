@@ -1,0 +1,364 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : TTH- 5p-9:20
+   Assignment#4 : Queue & Dequeue 
+*****************************************
+PART 1: 
+Size: 0
+NOW INSERTING ALL STRINGS:
+
+Size: 4
+Front: A man, a plan, a canal, Panama
+
+REMOVING first string: Size: 4
+Front: Was it a car or a cat I saw?
+
+PART 2:
+
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 1
+Size is : 0
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 2
+Its Empty!
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 3
+The Deque is Empty!
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 5
+Type an int to Push to Front: 5
+
+Size is : 1
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 3
+First: 5
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 4
+Last: 5
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 5
+Type an int to Push to Front: 2
+
+Size is : 2
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 5
+Type an int to Push to Front: 3
+
+Size is : 3
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 6
+Type an int to Push to Back: 2
+
+Size is : 4
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 1
+Size is : 4
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 2
+Not Empty!
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 3
+First: 3
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 4
+Last: 2
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 7
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 3
+First: 2
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 7
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 3
+First: 5
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 4
+Last: 2
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 8
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 4
+Last: 5
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 8
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 4
+The Deque is Empty!
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 7
+Cannot remove from an empty list
+
+
+Make a Choice!:
+1-View Size
+2-Is the list empty?
+3-View Front of List
+4-View Back of List
+5-Push Front
+6 Push Back
+7 Pop Front
+8 Pop Back
+0 EXIT
+
+Choice: 0
+Exitting!

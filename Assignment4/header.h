@@ -17,4 +17,7 @@ using namespace std;
 //Contains code for Part 1
 void Part1();
 
+//Contains code for Part 2
+void Part2();
+
 #endif /* HEADER_H_ */
