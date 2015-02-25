@@ -1,0 +1,14 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : TTH- 5p-9:20
+   Assignment#5 : Binary Tree 
+*****************************************
+Enter a value for the root: A
+Enter in a value for the tree: B
+Enter in a value for the tree: C
+Enter in a value for the tree: D
+Enter in a value for the tree: E
+Enter in a value for the tree: F
+Enter in a value for the tree: G
+Tree Order from Root to last one: A B C D E F G 
