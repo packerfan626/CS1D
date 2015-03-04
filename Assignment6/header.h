@@ -14,6 +14,9 @@
 
 using namespace std;
 
+void selectSort(int arr[], int n);
+void Part1();
 
+void Part2();
 
 #endif /* HEADER_H_ */

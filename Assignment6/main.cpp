@@ -18,5 +18,10 @@ int main()
 	cout << "   Assignment#6 : Priority Queue \n";
 	cout << "*****************************************\n";
 
+	cout << "Part 1: " << endl << endl;
+	Part1();
 
+	cout << endl << endl << endl << "Part 2: " << endl << endl;
+	Part2();
+	return 0;
 }

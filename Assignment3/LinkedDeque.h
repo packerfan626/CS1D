@@ -107,7 +107,6 @@ void Double<Data>::insertBack(const Data newItem)
 		back->next = temp;
 		temp->prev = back;
 		back = temp;
-
 		back->next = NULL;
 	}
 	n++;

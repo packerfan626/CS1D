@@ -1,0 +1,35 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : TTH- 5p-9:20
+   Assignment#6 : Priority Queue 
+*****************************************
+Part 1: 
+
+Ascending Order: 
+
+9: Irene Ill
+8: Bob Bleeding
+7: Alice Ailment
+6: Sid Sickly
+5: Cathy Couging
+4: Sam Sneezing
+3: Tom Temperature
+2: Paula Pain
+1: Frank Feelingbad
+
+
+
+Part 2: 
+
+First to last: 
+
+1. Name: Frank Feelingbad
+2. Name: Paula Pain
+3. Name: Tom Temperature
+4. Name: Cathy Coughing
+5. Name: Sam Sneezing
+6. Name: Sid Sickly
+7. Name: Alice Ailment
+8. Name: Bob Bleeding
+9. Name: Irene Ill
