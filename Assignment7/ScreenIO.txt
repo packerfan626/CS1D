@@ -1,0 +1,19 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : T-TH 5p-9:20
+   Assignment#7 : Heaps 
+*****************************************
+INSERTING VALUES: 
+
+1: 11
+2: 44
+3: 52
+4: 67
+5: 88
+6: 77
+7: 66
+8: 93
+Removing ALL Values: 
+
+Last Value: 93

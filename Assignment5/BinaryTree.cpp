@@ -24,6 +24,7 @@ bool BinaryTree::isEmpty()
 	{
 		return false;
 	}
+
 }
 
 //Insert function; will add the value to the binary
