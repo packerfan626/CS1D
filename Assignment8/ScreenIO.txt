@@ -1,0 +1,71 @@
+*****************************************
+   Programmed by: Dori J. Mouawad
+   Student ID   : 356008
+   CS1D         : T-TH 5p-9:20
+   Assignment#8 : Double Hashing 
+*****************************************
+Inserting Laguna Niguel into H(K) at #18
+
+Inserting Mission Viejo into H(K) at #3
+
+Double Hashing:  Lake Forestinto H(K) at #12
+
+Inserting Irvine into H(K) at #6
+
+Deleting Laguna Niguel from H(K)
+
+Inserting San Clemente into H(K) at #2
+
+Inserting San Diego into H(K) at #13
+
+Inserting Anaheim into H(K) at #11
+
+Deleting Lake Forest from H(K)
+
+Inserting Los Angeles into H(K) at #16
+
+Inserting Orange into H(K) at #17
+
+Inserting Palm Springs into H(K) at #1
+
+Inserting Riverside into H(K) at #7
+
+Deleting Anaheim from H(K)
+
+Inserting Brea into H(K) at #0
+
+Double Hashing:  Santa Anainto H(K) at #8
+
+Double Hashing: Tustin
+
+Inserting Oceanside into H(K) at #14
+
+Inserting La Jolla into H(K) at #11
+
+Double Hashing: Del Mar
+
+Double Hashing:  Aliso Viejointo H(K) at #12
+
+Double Hashing: Laguna Beach
+
+H(K): 
+
+In #0: Brea
+In #1: Palm Springs
+In #2: San Clemente
+In #3: Mission Viejo
+In #4: Del Mar
+In #5: Laguna Beach
+In #6: Irvine
+In #7: Riverside
+In #8: Santa Ana
+In #9: EMPTY
+In #10: EMPTY
+In #11: La Jolla
+In #12: Aliso Viejo
+In #13: San Diego
+In #14: Oceanside
+In #15: EMPTY
+In #16: Los Angeles
+In #17: Orange
+In #18: Tustin

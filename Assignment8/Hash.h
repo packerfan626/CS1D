@@ -22,7 +22,7 @@ public:
 
 private:
 	string hash[19];
-	string doubleHash[19];
+	string doubleHash[100];
 	int has;
 	int doubleHas;
 
@@ -36,33 +36,50 @@ Hash::Hash()
 
 void Hash::insert(int key, string value)
 {
-	int single;
+	int single = 0;
 	single = key % 19;
 
-	int dub;;
+	int dub = 0;
 	dub = 17 - (key%17);
 
 	if (hash[single] == "")
 	{
-		cout << "Inserting "<< value << " into H(K)\n\n";
+		cout << "Inserting "<< value << " into H(K) at #" << single << endl << endl;
 
 		hash[single] = value;
+		doubleHash[key] = value;
 
 		has++;
 	}
 	else
 	{
-		if(doubleHash[dub] == "")
+		if(hash[dub] == "")
 		{
-			cout << "Inserting "<< value << " into H'(K)\n\n";
+			cout << "Double Hashing:  "<< value << "into H(K) at #" << dub << endl << endl;
 
-			doubleHash[dub] = value;
+			hash[dub] = value;
+			doubleHash[key] = value;
 
-			doubleHas++;
+			has++;
 		}
 		else
 		{
-			cout << "Cannot insert " << value << " into either hash tables\n\n";
+			while (hash[dub] != "")
+			{
+				dub++;
+
+				if(dub == 19)
+				{
+					dub = 0;
+				}
+			}
+
+			if(hash[dub] == "")
+			{
+				cout << "Double Hashing: "<< value << "\n\n";
+				hash[dub] = value;
+				doubleHash[key] = value;
+			}
 		}
 
 	}
@@ -83,18 +100,6 @@ void Hash::print()
 		}
 	}
 
-	cout << "\n\nH'(K): \n\n";
-	for (int k = 0; k < 19; k++)
-	{
-		if (doubleHash[k] == "")
-		{
-			cout << "In #" << k << ": EMPTY" << endl;
-		}
-		else
-		{
-			cout << "In #" << k << ": "<< doubleHash[k] << endl;
-		}
-	}
 }
 
 void Hash::erase(int key)
@@ -102,10 +107,10 @@ void Hash::erase(int key)
 	int single;
 	single = key % 19;
 
-	int dub;;
+	int dub;
 	dub = 17 - (key%17);
 
-	if (hash[single] != "")
+	if (hash[single] != "" && hash[single] == doubleHash[key])
 	{
 		cout << "Deleting "<< hash[single] << " from H(K)\n\n";
 
@@ -113,22 +118,28 @@ void Hash::erase(int key)
 
 		has--;
 	}
+	else if (hash[single] == "" || hash[single] != doubleHash[key])
+	{
+		int i = 0;
+		string value;
+
+		value = doubleHash[key];
+		while(hash[i] != value)
+		{
+			i++;
+		}
+
+		if(hash[i] == value)
+		{
+			cout << "Deleting "<< hash[i] << " from H(K)\n\n";
+			hash[i] = "";
+		}
+	}
 	else
 	{
-		if(doubleHash[dub] != "")
-		{
-			cout << "Deleting "<< doubleHash[dub] << " from H'(K)\n\n";
-
-			doubleHash[dub] = "";
-
-			doubleHas--;
-		}
-		else
-		{
-			cout << "Cannot find value\n\n";
-		}
-
+		cout << "Cannot find value\n\n";
 	}
+
 }
 
 
